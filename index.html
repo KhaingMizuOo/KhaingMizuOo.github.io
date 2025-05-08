@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>နန်းခိုင်မဉ္ဇူဦး | Hydroponic Project</title>
+    <style>
+        :root {
+            --primary-color: #2c5f2d;
+            --secondary-color: #97bc62;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pyidaungsu', 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .profile-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-details {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1rem;
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>နန်းခိုင်မဉ္ဇူဦး</h1>
+            <p>Hydroponic Project Member</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="profile-section">
+            <h2>ကျောင်းသူအကြောင်း</h2>
+            <ul>
+                <li>အတန်း - <span class="highlight">၁၂တန်း</span></li>
+                <li>ကျောင်း - <span class="highlight">တောင်ကလေးဘုန်းတော်ကြီးသင်ပညာရေးကျောင်း</span></li>
+                <li>ဝါသနာ - <span class="highlight">ပန်းချီဆွဲခြင်း</span></li>
+                <li>နေရပ်ဒေသ - <span class="highlight">တောင်ကလေးရွာ</span></li>
+            </ul>
+        </section>
+
+        <section class="profile-section">
+            <h2>Project အကြောင်း</h2>
+            <div class="project-details">
+                <p>ကျွန်မရွေးချယ်လုပ်ဆောင်နေသော Project - <span class="highlight">Hydrooonic (Hydroponic)</span></p>
+                <p>စိတ်ဝင်စားရသည့်အကြောင်းရင်း - <br>
+                <span class="highlight">"မြေမဲ့စိုက်ပျိုးရေးနည်းပညာအပေါ် စိတ်ဝင်စားမှုကြောင့် Hydroponic စနစ်ကို လေ့လာလုပ်ဆောင်လျက်ရှိပါသည်။"</span></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 နန်းခိုင်မဉ္ဇူဦး | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for section entries
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.profile-section');
+            
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
